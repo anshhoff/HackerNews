@@ -14,12 +14,18 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             List (networkManager.posts) { post in
-                
-                HStack{
-                    Text(String(post.points)).foregroundColor(.green)
-                    Text(post.title)
+                NavigationLink(destination: DetailView(url: post.url)) {
+                    VStack{
+                        HStack{
+                            Image(systemName: "arrowshape.up.fill").foregroundColor(.green)
+                            Text(String(post.points)).foregroundColor(.green)
+                            Text(post.title)
+                        }
+                        Text(post.created_at)
+                            .foregroundColor(.gray)
+                            
+                    }
                 }
-                
             }.navigationBarTitle("H4KeR NEWZZ")
         }
         .onAppear {
