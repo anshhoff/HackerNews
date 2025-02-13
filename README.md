@@ -9,7 +9,7 @@ H4KeR NEWZZ is a simple iOS application that fetches and displays the latest tec
 - Dark mode support
 
 ## Screenshots
-![H4KeR NEWZZ](image.png)
+<img width="1307" alt="image" src="https://github.com/user-attachments/assets/cb105c47-fc0f-44d8-8908-e8affd862a39" />
 
 ## Installation
 
